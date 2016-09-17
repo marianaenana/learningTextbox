@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<!--
+  <h1>Modificando DOM</h1>
+
+  <input type="text" oninput="escribir_texto(this)">
+
+  <p class="parrafo">
+    Esto es un párrafo
+  </p>
+
+  <script>
+    var titulo = document.querySelector("h1");
+    console.log("el elemento seleccionado es: ");
+    console.log(titulo);
+    titulo.innerText = "arriba Matamoros"
+
+    function escribir_texto(caja_texto){
+      console.log(caja_texto.value);
+      titulo.innerText = caja_texto.value;
+    }
+  </script>
+-->
+  <div class="boton">
+    <p>¿Cuál es tu nombre?</p>
+
+    <input type="text" onclick="escribir_texto(this)">
+    <button type="button" onclick="console.log('Buenas noches')">¡Click aquí!</button>
+
+    <script>
+    var nombre = document.querySelector("escribir_texto");
+    console.log("Buenas noches " + nombre);
+
+    function escribir_texto(caja_texto){
+    console.log(caja_texto.value);
+    }
+
+    </script>
+  </div>
+
+
+
+</body>
+</html>
